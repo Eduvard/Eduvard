@@ -32,7 +32,7 @@ struct pass {
     char username[50];
     int date, month, year;
     char pnumber[15];
-    char adharnum[20];
+    char socialnum[20];
     char fname[20];
     char lname[20];
     char fathname[20];
@@ -143,7 +143,7 @@ void account(void)
     printf("\nYEAR-");
     scanf("%d", &u1.year);
 
-    printf("\n\nADHAR NUMBER");
+    printf("\n\nSOCIAL NUMBER");
     scanf("%s", u1.adharnum);
 
     printf("\n\nPHONE NUMBER");
@@ -328,8 +328,8 @@ void display(char username1[])
                 u1.mothname);
 
             gotoxy(55, 16);
-            printf("ADHAR CARD NUMBER..%s",
-                u1.adharnum);
+            printf("SOCIAL CARD NUMBER..%s",
+                u1.socialnum);
 
             gotoxy(55, 18);
             printf("MOBILE NUMBER..%s",
